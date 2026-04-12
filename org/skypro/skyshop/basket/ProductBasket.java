@@ -4,7 +4,7 @@ import org.skypro.skyshop.product.Product;
 
 import java.util.Arrays;
 
-public class ProductBasket {
+public abstract class ProductBasket {
     public static final int MAX_PRODUCTS = 5;
     private final Product[] products;
 
@@ -65,7 +65,7 @@ public class ProductBasket {
         int count = 0;
         for (Product product : products) {
             if (product != null) {
-                if (product.isSpescial()) {
+                if (product.isSpecial()) {
                     count++;
                 }
             }

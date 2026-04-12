@@ -16,7 +16,7 @@ public class DiscountedProduct extends Product {
     }
 
     @Override
-    public boolean isSpescial() {
+    public boolean isSpecial() {
         return true;
     }
 
